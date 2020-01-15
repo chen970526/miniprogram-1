@@ -1,9 +1,17 @@
-.new{
-  display: flex;
-  background-color:#f0f0f0
+.top{
+  background-color: #eb4450;
+  height: 100rpx;
+  width: 100%;
 }
-.item{
-  flex: 1;
-  font-size: 20px;
-text-align: center;
+.search{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5rpx;
+ color: #767676;
+ font-size: 32rpx;
 }
