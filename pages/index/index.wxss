@@ -15,3 +15,11 @@
  color: #767676;
  font-size: 32rpx;
 }
+.news{
+  display: flex;
+background-color: #ccc;
+}
+.new{
+  flex: 1;
+  text-align: center
+}

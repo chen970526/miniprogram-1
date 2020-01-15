@@ -1,0 +1,12 @@
+<view class="container">
+  <swiper indicator-dots="{{true}}"
+  autoplay="{{true}}"
+>
+  <swiper-item wx:for="{{tabItems}}" wx:key="id">
+    <!-- <image src="" mode="aspectFit" ></image> -->
+  
+  </swiper-item>
+   
+</swiper>
+ <view wx:for="{{tabItems}}" wx:key="index">1</view>
+</view>

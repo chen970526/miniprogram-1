@@ -1,3 +1,9 @@
 <view class="top">
-<view class="search">搜索</view>
+<view class="search">{{searchtext}}</view>
 </view>
+<!-- 
+<view class="news">
+<view class="new" wx:for="{{news}}" wx:key="id">{{item.name}}</view>
+</view> -->
+
+<mySwiper tabItems="{{swiperlist}}"></mySwiper>
