@@ -1,0 +1,9 @@
+.new{
+  display: flex;
+  background-color:#f0f0f0
+}
+.item{
+  flex: 1;
+  font-size: 20px;
+text-align: center;
+}
