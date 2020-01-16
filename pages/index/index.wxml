@@ -1,9 +1,29 @@
-<view class="top">
-<view class="search">{{searchtext}}</view>
-</view>
-<!-- 
-<view class="news">
-<view class="new" wx:for="{{news}}" wx:key="id">{{item.name}}</view>
-</view> -->
+<view class="index">
+  <view class="search">
+    <mySearchInput/>
+  </view>
 
-<mySwiper tabItems="{{swiperlist}}"></mySwiper>
+  <mySwiper tabItems="{{swiperlist}}" />
+
+  <view class="fenlei">
+    <view wx:for="{{fenlei}}" wx:key="index" class="fenleiList">
+      <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+        <image src="{{item.image_src}}" mode='aspectFit'></image>
+      </navigator>
+    </view>
+  </view>
+  <view class="floor">
+    <view class="floorList" wx:for="{{floorList}}" wx:key='index'>
+      <view class="floorTop">
+        <image src="{{item.floor_title.image_src}}" mode='aspectFit'></image>
+      </view>
+      <view class="floordown">
+        <view wx:for="{{item.product_list}}" wx:key='index' wx:for-item="v" wx:for-index="i">
+          <navigator url="v.navigator_url" open-type="v.open_type" style="width:{{v.image_width}}rpx">
+            <image src="{{v.image_src}}"></image>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -12,7 +12,9 @@ Page({
     //   {id:4,name:'项目4'},
       
     // ]
-    swiperlist:[]
+    swiperlist:[],
+    fenlei:[],
+    floorList:{}
   },
 
   /**
@@ -21,12 +23,34 @@ Page({
   onLoad: function (options) {
     wx.request({
       url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata', //仅为示例，并非真实的接口地址
-      success(res) {
-        
-        this.swiperlist = res.data.message
-        console.log(this.swiperlist)
+      success: (res) => {
+        this.setData({
+          swiperlist: res.data.message
+        })
+        // console.log(this.swiperlist)
       }
-    })
+    }),
+     wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/home/catitems', //仅为示例，并非真实的接口地址
+      success: (res) => {
+        
+        this.setData({
+          fenlei: res.data.message
+        })
+      }
+      }),
+      wx.request({
+      url: 'https://api.zbztb.cn/api/public/v1/home/floordata', //仅为示例，并非真实的接口地址
+        success: (res) => {
+          console.log(res)
+          this.setData({
+            floorList: res.data.message
+          })
+          
+        }
+      })
+
+    console.log(this.floor)
   }, 
   onMyTab(e) {
     console.log(e.detail);

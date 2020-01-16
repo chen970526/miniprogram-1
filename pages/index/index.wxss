@@ -1,25 +1,35 @@
-.top{
-  background-color: #eb4450;
-  height: 100rpx;
-  width: 100%;
-}
-.search{ 
+.fenlei {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 700rpx;
-  height: 80rpx;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 5rpx;
- color: #767676;
- font-size: 32rpx;
 }
-.news{
-  display: flex;
-background-color: #ccc;
-}
-.new{
+.fenlei .fenleiList {
+  margin: 12rpx 30rpx 43rpx;
+  width: 128rpx;
+  height: 140rpx;
   flex: 1;
-  text-align: center
+}
+.fenlei .fenleiList navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.floor .floorList .floorTop {
+  height: 60rpx;
+}
+.floor .floorList .floordown {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10rpx 0rpx;
+}
+.floor .floorList .floordown view:nth-child(1) {
+  height: 386rpx;
+}
+.floor .floorList .floordown view {
+  height: 188rpx;
+  margin-left: 15rpx;
+  margin-bottom: 10rpx;
+}
+.floor .floorList .floordown view navigator {
+  display: block;
+  width: 100%;
+  height: 100%;
 }

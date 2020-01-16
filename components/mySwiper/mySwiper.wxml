@@ -1,12 +1,10 @@
-<view class="container">
-  <swiper indicator-dots="{{true}}"
-  autoplay="{{true}}"
->
-  <swiper-item wx:for="{{tabItems}}" wx:key="id">
-    <!-- <image src="" mode="aspectFit" ></image> -->
-  
-  </swiper-item>
-   
-</swiper>
- <view wx:for="{{tabItems}}" wx:key="index">1</view>
-</view>
+
+ <view class="index_swiper">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item wx:for="{{tabItems}}" wx:key="goods_id">
+        <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+          <image src="{{item.image_src}}" mode="widthFix"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>

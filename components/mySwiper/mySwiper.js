@@ -17,7 +17,7 @@ Component({
 
       console.log(this.tabItems);
     }
-  },
+  }
   
   
 })
