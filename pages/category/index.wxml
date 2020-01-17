@@ -1,10 +1,5 @@
 <view class="classify">
 
   <mySearchInput/>
-  <view class="page-section-spacing">
-    <scroll-view scroll-y="true" style="height: 1000rpx;" >
-      <view id="demo1" class="scroll-view-item demo-text-1" wx:for='{{list}}' wx:key='cat_id'>{{item.cat_name}}</view>
-      
-    </scroll-view>
-  </view>
+  <leftMyScroll leftList="{{list}}"/>
 </view>

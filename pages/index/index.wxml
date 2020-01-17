@@ -19,7 +19,7 @@
       </view>
       <view class="floordown">
         <view wx:for="{{item.product_list}}" wx:key='index' wx:for-item="v" wx:for-index="i">
-          <navigator url="v.navigator_url" open-type="v.open_type" style="width:{{v.image_width}}rpx">
+          <navigator url="{{v.navigator_url}}" open-type="{{v.open_type}}" style="width:{{v.image_width}}rpx">
             <image src="{{v.image_src}}"></image>
           </navigator>
         </view>

@@ -20,8 +20,12 @@
   flex-wrap: wrap;
   margin: 10rpx 0rpx;
 }
-.floor .floorList .floordown view:nth-child(1) {
+.floor .floorList .floordown view:nth-child(1) image {
   height: 386rpx;
+}
+.floor .floorList .floordown view:nth-child(4) {
+  margin-left: 0;
+  padding-left: 263rpx;
 }
 .floor .floorList .floordown view {
   height: 188rpx;

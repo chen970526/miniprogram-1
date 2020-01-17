@@ -1,0 +1,6 @@
+ <view class="page-section-spacing">
+    <scroll-view scroll-y="true">
+      <view id="demo1" class="scroll-view-item demo-text-1" wx:for='{{leftList}}' wx:key='cat_id'>{{item.cat_name}}</view>
+      
+    </scroll-view>
+  </view>
